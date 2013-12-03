@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   #respond_to :json
 
 	def index
-		render :json => {:data => "Hello World"}
+		render :json => {:data => "Hello the fucking bastard World"}
 	end
 end
