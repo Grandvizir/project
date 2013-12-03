@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'multi_json'
+gem 'pg'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
