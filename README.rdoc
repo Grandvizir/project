@@ -1,17 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Start the server
+<tt>rails s -e production</tt>.
+
+* URL Production mode
+<tt>http://tpoc.herokuapp.com/</tt>
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : 2.0
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+
 
 * Database initialization
 
@@ -21,8 +25,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+	- Remote :
+		- Github
+		- Heroku : <tt>git@heroku.com:tpoc.git</tt> => Only for production mode
 
 
-Please feel free to use a different markup language if you do not plan to run
+
 <tt>rake doc:app</tt>.
