@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   #protect_from_forgery with: :exception, :null_session
   #respond_to :json
 
-	def index
+  	def index
+ 		redirect_to "/app"
+ 	end	
+
+	def hello
 		render :json => {:data => "Hello the fucking bastard World"}
 	end
 end
