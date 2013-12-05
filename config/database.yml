@@ -6,11 +6,11 @@
 development:
   development:
   adapter: postgresql
-  host: 
-  database: 
-  username: 
-  password: 
-  port: 5000
+  host: ec2-54-246-101-76.eu-west-1.compute.amazonaws.com
+  database: ddbv7tat5i46ci
+  username: wdedwtbklwoojv
+  password: n2Dq5qfiscHYc0UIGcI3i2wMB5
+  port: 5432
   pool: 1
   timeout: 10000
 
@@ -24,7 +24,12 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  development:
+  adapter: postgresql
+  host: ec2-54-246-101-76.eu-west-1.compute.amazonaws.com
+  database: ddbv7tat5i46ci
+  username: wdedwtbklwoojv
+  password: n2Dq5qfiscHYc0UIGcI3i2wMB5
+  port: 5432
+  pool: 1
+  timeout: 10000
