@@ -5,8 +5,21 @@ Tpoc::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'application#index'
 
+
+##### USER #######
+
+get   'user/get/:user_id' => 'user#get_user_by_id'
+get   'user/delete/:user_id' => 'user#delete'
+post  'user/login/:mail/:password' => 'user#get_by_email_password'
+post  'user/create/:name/:last_name/:mail/:password' => 'user#create'
+post  'user/update/:user_id/:name/:last_name/:mail/:password' => 'user#update'
+
+
+
+
+
   # Example of regular route:
-  #    get 'products/:id' => 'catalog#view'
+     
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
