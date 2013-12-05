@@ -1,4 +1,4 @@
-class UserController
+class UserController < ActionController::Base
 
 	def get_by_email_password
 		endpoint = "Empty parameters"
