@@ -10,9 +10,9 @@ Tpoc::Application.routes.draw do
 
 get   'user/get/:user_id' => 'user#get_user_by_id'
 get   'user/delete/:user_id' => 'user#delete'
-post  'user/login/:mail/:password' => 'user#get_by_email_password'
-post  'user/create/:name/:last_name/:mail/:password' => 'user#create'
-post  'user/update/:user_id/:name/:last_name/:mail/:password' => 'user#update'
+post  'user/login' => 'user#get_by_email_password' # /:mail/:password
+post  'user/create' => 'user#create' #/:name/:last_name/:mail/:password
+post  'user/update' => 'user#update' #/:user_id/:name/:last_name/:mail/:password
 
 
 
