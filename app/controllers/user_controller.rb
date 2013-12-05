@@ -9,7 +9,7 @@ class UserController < ActionController::Base
 					"mail = ? AND password = ?",
 					params[:mail],
 					pwd
-				])
+				]).first
 			rescue => e 
 				endpoint = e.to_s
 			end
