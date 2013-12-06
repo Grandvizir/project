@@ -49,7 +49,7 @@
     </style>
   </head>
 
-  <body>
+  <body ng-app="tpocmain">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -70,8 +70,36 @@
       </div>
     </div>
     <div class="container">
-
+        <form ng-controller="ProfilCtrl">
+            <div id="profile" class="jumbotron panel panel-default">
+	    		<div class="panel-heading">
+	    			Inscription
+                    <div id="info" class="container"></div>
+    			</div>
+    			<div class="panel-body">
+    				<div class="row">
+    					<div class="col-xs-6 example-block">
+    						<ul class="list-unstyled">
+    							<li><input type="text" name="name" placeholder="Nom" required="true"> <input type="text" name="last_name" placeholder="Prénom" required="true"></li>
+    							<li><input type="mail" name="mai" placeholder="mail" required="true"> <input type="password" name="password" placeholder="mot de passe" required="true"></li>
+							    <li><input type="submit" value="Submit Form"></li>
+                            </ul>
+    					</div>
+    					<div class="col-xs-6 example-block">
+    						<ul class="list-unstyled">
+    							<li>
+    								<img class="img-suggestion" src="" />
+    							</li>
+							</ul>
+    					</div>
+					</div>
+				</div>
+    		</div>
+        </form>
     </div>
+
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
