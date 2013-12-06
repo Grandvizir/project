@@ -11,10 +11,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205213001) do
+ActiveRecord::Schema.define(version: 20131206002258) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: true do |t|
+    t.string   "name",       default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.integer  "search_id"
+    t.text     "comment"
+    t.integer  "user_id"
+    t.integer  "power"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", force: true do |t|
+    t.text     "description"
+    t.text     "title"
+    t.integer  "user_id"
+    t.integer  "power"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subcategories", force: true do |t|
+    t.integer  "category_id", default: 0,   null: false
+    t.string   "name",        default: "0", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "suggestions", force: true do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "subcategory_id"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_subcats", force: true do |t|
+    t.integer  "user_id",        default: 0, null: false
+    t.integer  "subcategory_id", default: 0, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name",       default: "", null: false

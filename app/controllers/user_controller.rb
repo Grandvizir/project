@@ -1,6 +1,7 @@
 class UserController < ActionController::Base
 
 	def add_category
+		
 	end
 
 	def del_category
