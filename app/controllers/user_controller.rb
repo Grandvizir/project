@@ -1,8 +1,5 @@
 class UserController < ActionController::Base
 
-	post 'user-subcat/create' => 'user#add_category' # :user_id/:subcategory_id
-	post 'user-subcat/delete' => 'user#del_category' # :user_id/:subcategory_id
-
 	def add_category
 	end
 
