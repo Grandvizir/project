@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    	.img-suggestion 
+    	{
+    		width: 100px;
+    		height: 100px;
+    	}
+
+    	.choix {
+    		border: 3px solid #fff;
+    		border-radius: 0;
+    	}
+
+    	.a-tag{
+    		position:relative;
+    		width: 100px;
+    		height: 100px;
+    		display: block;
+    	}
+
+    	.tag{
+    		position: absolute;
+			bottom: 0;
+			height: 20px;
+			line-height: 20px;
+			background-color: rgba(0,0,0,0.5);
+			width: 100%;
+			color: #fff;
+    	}
+
+        .jumbotron-profile {
+            margin-top: 25px;
+            width: 250px;
+        }
+
+        #suggestion {
+            background-color: #74cfae;
+        }
+
+        #suggestion .panel-heading
+        {
+            margin-top: 5px;
+        }
+        .suggestion-content{
+            position: relative;
+            left: 50px;
+        }
+
+        #suggestion .panel-heading {
+            background-color: #fff;
+        }
+
+        .power-content{
+            position: relative;
+            text-align: right;
+        }
+
+        .power {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-bolt"></i></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	    <div class="container">
+	    	<div id="profile" class="jumbotron-profile panel panel-default">
+    			<div class="panel-body">
+    				<div class="row">
+    					<div class="col-xs-6 example-block">
+    						<ul class="list-unstyled">
+    							<li>Pierre Houdyer</li>
+    							<li>Paris, France</li>
+							</ul>
+    					</div>
+    				
+    						<ul class="list-unstyled">
+    							<li>
+    								<img class="img-suggestion" src="http://www.expert-juridique.fr/images/profile/lawyer/default.gif" />
+    							</li>
+							</ul>
+
+					</div>
+				</div>
+    		</div>
+    
+    					
+
+    		<div id="suggestion" class="jumbotron panel panel-default">
+	    		<div class="panel-heading">
+                    <img class="img-suggestion pull-left" src="http://www.expert-juridique.fr/images/profile/lawyer/default.gif" />
+                    <div class="suggestion-content">
+    	    			<h3>Suggestion 3</h3>
+    	    	  		<p>plop plop plop plop plop plop </p>
+                    </div>
+                    <div class="">
+                        <ul class="list-unstyled power-content">
+                            <li><img class="power" src="assets/img/up.png"></li>
+                            <li><img class="power" src="assets/img/down.png"></li>
+                        </ul>
+                    </div>
+				</div>
+                <div class="panel-heading">
+                    <img class="img-suggestion pull-left" src="http://www.expert-juridique.fr/images/profile/lawyer/default.gif" />
+                    <div class="suggestion-content">
+                        <h3>Suggestion 1</h3>
+                        <p>plop plop plop plop plop plop </p>
+                    </div>
+                    <div class="">
+                        <ul class="list-unstyled power-content">
+                            <li><img class="power" src="assets/img/up.png"></li>
+                            
+                            <li><img class="power" src="assets/img/down.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <img class="img-suggestion pull-left" src="http://www.expert-juridique.fr/images/profile/lawyer/default.gif" />
+                    <div class="suggestion-content">
+                        <h3>Suggestion 1</h3>
+                        <p>plop plop plop plop plop plop </p>
+                    </div>
+                    <div class="">
+                        <ul class="list-unstyled power-content">
+                            <li><img class="power" src="assets/img/up.png"></li>
+                            
+                            <li><img class="power" src="assets/img/down.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <img class="img-suggestion pull-left" src="http://www.expert-juridique.fr/images/profile/lawyer/default.gif" />
+                    <div class="suggestion-content">
+                        <h3>Suggestion 1</h3>
+                        <p>plop plop plop plop plop plop </p>
+                    </div>
+                    <div class="">
+                        <ul class="list-unstyled power-content">
+                            <li><img class="power" src="assets/img/up.png"></li>
+                            
+                            <li><img class="power" src="assets/img/down.png"></li>
+                        </ul>
+                    </div>
+                </div>
+					
+			</div>
+    			
+    		
+	    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>

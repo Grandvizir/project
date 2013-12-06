@@ -36,7 +36,7 @@ post 'user-subcat/delete' => 'user#del_category' # :user_id/:subcategory_id
 
 ####### search #######
 
-get 'search/get' => 'search#get_all'
+get 'search/get' => 'search#get'
 
   # Example of regular route:
      
