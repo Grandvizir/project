@@ -6,7 +6,7 @@ $(window).load((function()
                                                         $.ajax({
                                                             type: 'post',
                                                             data:$(this).serialize(),
-                                                            url: 'http://tpoc.herokuapp.com/user/create/',
+                                                            url: '/user/create/',
                                                             success:function(data)
                                                                     {
                                                                         data = JSON.parse(data);
@@ -26,7 +26,7 @@ $(window).load((function()
                                                         $.ajax({
                                                             type: 'post',
                                                             data:$(this).serialize(),
-                                                            url: 'http://tpoc.herokuapp.com/user/login/',
+                                                            url: '/user/login/',
                                                             success:function(data)
                                                                     {
                                                                         data = JSON.parse(data);
