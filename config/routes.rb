@@ -3,8 +3,8 @@ Tpoc::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'application#index'
-
+root 'application#index'
+#get '/app' => 'application#app'
 
 ##### USER #######
 
@@ -16,7 +16,27 @@ post  'user/update' => 'user#update' #/:user_id/:name/:last_name/:mail/:password
 
 
 
+####### CATEGORY ########
 
+
+get 'category/get' => 'category#get'
+post 'category/create/:name' => 'category#add'
+
+
+######## SUBCATEGORY #######
+
+get 'subcategory/get' => 'subcategory#get'
+post 'subcategory/create' => 'subcategory#create' #/:categroy_id/:name
+
+######## USER SUBCATEGORY #######
+
+post 'user-subcat/create' => 'user#add_category' # :user_id/:subcategory_id
+post 'user-subcat/delete' => 'user#del_category' # :user_id/:subcategory_id
+
+
+####### search #######
+
+get 'search/get' => 'search#get_all'
 
   # Example of regular route:
      

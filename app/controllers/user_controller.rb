@@ -1,5 +1,14 @@
 class UserController < ActionController::Base
 
+	post 'user-subcat/create' => 'user#add_category' # :user_id/:subcategory_id
+	post 'user-subcat/delete' => 'user#del_category' # :user_id/:subcategory_id
+
+	def add_category
+	end
+
+	def del_category
+	end
+
 	def get_by_email_password
 		endpoint = "Empty parameters"
 		if params[:mail] && params[:password]
